@@ -62,6 +62,7 @@ namespace SupermarketManagementSystem
             this.PassTb.Name = "PassTb";
             this.PassTb.Size = new System.Drawing.Size(199, 27);
             this.PassTb.TabIndex = 2;
+            this.PassTb.UseSystemPasswordChar = true;
             // 
             // RoleCb
             // 

@@ -194,5 +194,12 @@ namespace SupermarketManagementSystem
             Con.Close();
             
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            sellerForm seller = new sellerForm();
+            seller.Show();
+        }
     }
 }

@@ -69,6 +69,7 @@ namespace SupermarketManagementSystem
             populate();
             populateBills();
             fillcombo();
+            SellerNameLbl.Text = Form1.SellerName;
         }
 
         
@@ -149,10 +150,12 @@ namespace SupermarketManagementSystem
 
         }
 
+        
         private void ProdDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             ProdName.Text = ProdDGV.Rows[e.RowIndex].Cells[0].FormattedValue.ToString();
             ProdPrice.Text = ProdDGV.Rows[e.RowIndex].Cells[1].FormattedValue.ToString();
+            
         }
 
         private void BillDGV_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -179,6 +182,18 @@ namespace SupermarketManagementSystem
         }
 
         private void ProdName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 login = new Form1();
+            login.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
         {
 
         }

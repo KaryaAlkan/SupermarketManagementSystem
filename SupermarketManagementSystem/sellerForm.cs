@@ -171,5 +171,12 @@ namespace SupermarketManagementSystem
             SellerPhone.Text = "";
             SellerPass.Text = "";
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Form1 log = new Form1();
+            log.Show();
+            this.Hide();
+        }
     }
 }

@@ -62,6 +62,7 @@ namespace SupermarketManagementSystem
             this.button5 = new System.Windows.Forms.Button();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrderDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProdDGV)).BeginInit();
@@ -365,6 +366,7 @@ namespace SupermarketManagementSystem
             this.button8.TabIndex = 17;
             this.button8.Text = "DELETE";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button6
             // 
@@ -455,11 +457,25 @@ namespace SupermarketManagementSystem
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(10, 535);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(76, 27);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "LogOut";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // SellingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 611);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -473,6 +489,7 @@ namespace SupermarketManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.ProdDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BillDGV)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -510,5 +527,6 @@ namespace SupermarketManagementSystem
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label label6;
     }
 }
